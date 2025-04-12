@@ -1,0 +1,374 @@
+body {
+    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, sans-serif;
+}
+/*========================================
+    TOPBAR
+========================================*/
+/* Topbar Styling */
+#topbar {
+    background-color: #89a6c2;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  /* Typography and Links */
+  .top-contact a {
+    font-weight: 500; /* Semi-bold text for better readability */
+    color: #323e4b; /* Neutral text color */
+    text-decoration: none;
+  }
+  
+  .top-contact a:hover {
+    text-decoration: underline; /* Slight underline on hover for emphasis */
+  }
+  
+  /* Social Media Icons */
+  .top-social a {
+    color: #212529; /* Default icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animations */
+  }
+  
+  .top-social a:hover {
+    transform: scale(1.2); /* Zoom effect */
+    color: #0056b3; /* Change color on hover */
+  }
+  
+  /* General Layout Adjustments */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    align-items: center;
+  }
+  
+  .list-inline-item {
+    margin-right: 15px; /* Space between items */
+  }
+  
+/*========================================
+    HEADER
+========================================*/
+/* CSS Header */
+header {
+    padding: 30px 0;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand img {
+    margin-right: 20px;
+}
+
+.brand .brand-name h1 {
+    color: #15477A;
+    font-size: 24px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.brand .brand-name h3 {
+    font-size: 18px;
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+/*========================================
+    NAVBAR
+========================================*/
+/* Navbar */
+#navbar {
+    background-color: #15477A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+#navbar .navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+#navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+#navbar .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+#navbar .nav-link.active,
+#navbar .nav-link:hover {
+    color: #f1c40f;
+}
+
+#navbar .dropdown-menu {
+    background-color: #15477A;
+    border: none;
+    margin-top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .dropdown-item {
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#navbar .dropdown-item:hover {
+    background-color: #0f365e;
+}
+
+/*navbar logo*/
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-brand:hover {
+    color: #f1c40f;
+}
+
+/*========================================
+    IMG SLIDE
+========================================*/
+/* Slider Styling */
+#slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 500px; /* Ensures uniform height across all slides */
+  object-fit: cover; /* Maintains aspect ratio and fills the container */
+  object-position: center; /* Centers the image within the frame */
+}
+
+/* Optional Styling for Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background for better visibility */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px; /* Reduce height for smaller screens */
+  }
+}
+
+/*========================================
+    BERANDA
+========================================*/
+/*Beranda*/
+#beranda {
+   background-color: #888;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#nama {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/*========================================
+    SAMBUTAN
+========================================*/
+/*sambutan*/
+#sambutan {
+  padding: 5px 55px;
+  background-color: #ffffff;
+}
+
+#sambutan h1 {
+  color: #000000;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 30px;
+}
+#sambutan img.img-fluid {
+  float: left;
+  margin: 0 30px 30px 0;
+  max-width: 30%;
+  height: auto;
+}
+#sambutan p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Signature block styling (SAMBUTAN)*/
+p1, p2 {
+  display: block;
+  text-align: right;
+  margin: 0;
+  padding: 5px 20px;
+}
+
+/*========================================
+    SEJARAH
+========================================*/
+/* Container Styling */
+#sejarah {
+  margin: auto;
+  max-width: 800px;
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+#sejarah h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Image Styling */
+#sejarah img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #007bff;
+}
+
+/* Typography */
+#sejarah p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+#sejarah p.lead {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+#sejarah p.text-end {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #sejarah img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #sejarah h1 {
+    font-size: 24px;
+  }
+
+  #sejarah p {
+    font-size: 14px;
+  }
+}
+
+/*========================================
+    VISI MISI
+========================================*/
+/* Container Styling */
+#visimisi {
+  margin: auto;
+  max-width: 800px;
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Heading Styling */
+#visimisi h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+#visimisi h2 {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+/* Text Styling */
+#visimisi p,
+#visimisi ul li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+#visimisi ul {
+  list-style-type: disc;
+}
+
+#visimisi ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #visimisi h1 {
+    font-size: 24px;
+  }
+
+  #visimisi h2 {
+    font-size: 20px;
+  }
+
+  #visimisi p,
+  #visimisi ul li {
+    font-size: 14px;
+  }
+}
